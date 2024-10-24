@@ -9,6 +9,7 @@ console.log('min alder er: ' + age);
 // Template literal
 console.log(`min alder er: ${age}`);
 console.log(typeof age);
+
 //  const variable saving the string Alexander on the variable name name.
 const name = "Alexander";
 console.log('Mitt navn er: ' + name);
@@ -21,10 +22,15 @@ const isPresent = true;
 console.log("Er tilstede: ", isPresent);
 // Template literal:
 console.log(`Er tilstedet: ${isPresent}`);
-
 console.log(typeof isPresent);
 
+// Two const variables saving strings
+// One const variable saving the data from the two first variables.
 const firstName = "Alexander";
 const lastName = "Borge";
 const fullName = firstName + " " + lastName;
-console.log(fullName);
+console.log("Mitt fulle navn er:", fullName);
+
+
+const htmlElement = document.querySelector("#javaScript")
+htmlElement.textContent = fullName;
